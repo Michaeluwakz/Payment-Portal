@@ -1,0 +1,256 @@
+/* Portal Container */
+.portal-container {
+  min-height: 100vh;
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header Section */
+.portal-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portal-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.university-logo-img {
+  width: 50px !important;
+  height: 50px !important;
+  max-width: 50px !important;
+  max-height: 50px !important;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.university-logo-img:hover {
+  transform: scale(1.05);
+}
+
+/* Force logo size with more specific selectors */
+.logo-container img,
+.logo-container .university-logo-img,
+.portal-header .university-logo-img {
+  width: 50px !important;
+  height: 50px !important;
+  max-width: 50px !important;
+  max-height: 50px !important;
+}
+
+/* Main Login Card */
+.login-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212529;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+}
+
+/* Form Styles */
+.login-form {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #343A40;
+  margin-bottom: 8px;
+}
+
+.form-select,
+.form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #E9ECEF;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: white;
+  color: #212529;
+  transition: all 0.3s ease;
+}
+
+.form-select:focus,
+.form-input:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+.form-select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  padding-right: 48px;
+}
+
+.form-input::placeholder {
+  color: #6C757D;
+  font-weight: 400;
+}
+
+/* Sign In Button */
+.signin-btn {
+  width: 100%;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.signin-btn:hover {
+  background: #218838;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.signin-btn:active {
+  transform: translateY(0);
+}
+
+/* Instructions Section - Integrated within the card */
+.instructions-section {
+  background: #E6F7E6;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+.instructions-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #343A40;
+  margin-bottom: 15px;
+}
+
+.instructions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.instruction-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkmark {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.1rem;
+  min-width: 20px;
+}
+
+.instruction-text {
+  color: #343A40;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Dynamic Fields Animation */
+.dynamic-fields {
+  transition: all 0.3s ease;
+}
+
+.form-group {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portal-container {
+    padding: 15px;
+  }
+  
+  .portal-title {
+    font-size: 2rem;
+  }
+  
+  .login-card {
+    padding: 30px 25px;
+    margin: 0 15px;
+  }
+  
+  .login-title {
+    font-size: 1.75rem;
+  }
+  
+  .form-select,
+  .form-input {
+    padding: 12px 14px;
+  }
+  
+  .signin-btn {
+    padding: 14px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portal-title {
+    font-size: 1.75rem;
+  }
+  
+  .login-card {
+    padding: 25px 20px;
+  }
+  
+  .login-title {
+    font-size: 1.5rem;
+  }
+}

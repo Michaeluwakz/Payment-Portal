@@ -1,0 +1,61 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield Background -->
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bannerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Shield -->
+  <path d="M100 20 L180 60 L180 140 L100 180 L20 140 L20 60 Z" 
+        fill="url(#shieldGradient)" 
+        stroke="#1e40af" 
+        stroke-width="3"/>
+  
+  <!-- Banner -->
+  <rect x="30" y="70" width="140" height="25" 
+        fill="url(#bannerGradient)" 
+        rx="3"/>
+  
+  <!-- Banner Text -->
+  <text x="100" y="87" 
+        text-anchor="middle" 
+        font-family="Arial, sans-serif" 
+        font-size="12" 
+        font-weight="bold" 
+        fill="#1f2937">BAZE UNIVERSITY</text>
+  
+  <!-- Book Icon -->
+  <rect x="85" y="110" width="30" height="25" 
+        fill="#fbbf24" 
+        rx="2"/>
+  <rect x="87" y="112" width="26" height="21" 
+        fill="#fef3c7" 
+        rx="1"/>
+  <line x1="87" y1="118" x2="113" y2="118" 
+        stroke="#f59e0b" 
+        stroke-width="1"/>
+  <line x1="87" y1="123" x2="113" y2="123" 
+        stroke="#f59e0b" 
+        stroke-width="1"/>
+  
+  <!-- Motto -->
+  <text x="100" y="155" 
+        text-anchor="middle" 
+        font-family="Arial, sans-serif" 
+        font-size="10" 
+        font-weight="bold" 
+        fill="#fbbf24">LEARN, TO LIVE</text>
+  
+  <!-- Location -->
+  <text x="100" y="170" 
+        text-anchor="middle" 
+        font-family="Arial, sans-serif" 
+        font-size="9" 
+        fill="#fbbf24">ABUJA</text>
+</svg>
