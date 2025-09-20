@@ -125,10 +125,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🆘 Support
 
-##NOTE
+## NOTE
+
 This is for Educational purposes only 
 
-For support and questions, please contact the Baze University IT department.
+
 
 ---
 
