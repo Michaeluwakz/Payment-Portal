@@ -1,4 +1,4 @@
-# 🎓 Baze University Payment Portal
+# 🎓 Baze University DEMO Payment Portal
 
 A modern, responsive web application for Baze University's payment portal system, designed to provide seamless access for both new and returning students.
 
@@ -124,6 +124,9 @@ baze-university-payment-portal/
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🆘 Support
+
+##NOTE
+This is for Educational purposes only 
 
 For support and questions, please contact the Baze University IT department.
 
